@@ -42,24 +42,31 @@ This folder focuses on understanding, not problem-solving yet.
 
 Below are the files included in this section and what you will learn from each:
 
-* hello_world.py
-Your first Python program. Learn how to print output to the screen.
-* comments.py
-Learn how to write comments to explain your code and improve readability.
-* variables.py
-Understand how to store data using variables.
-* data_types.py
-Learn about basic data types such as integers, floats, strings, and booleans.
-* user_input.py
-Learn how to take input from users using the input() function.
-* simple_calculation.py
-Perform simple calculations using user-provided input.
-* arithmetic_operators.py
-Learn basic arithmetic operators like addition, subtraction, multiplication, and division.
-* string_basics.py
-Understand basic string operations, including concatenation and string length.
-* common_errors.py
-Get familiar with common beginner errors and learn that errors are part of learning.
+1. **Hello_World.py**
+   - Your first Python program. Learn how to print output to the screen.
+
+2. **Comments.py**
+   - Learn how to write comments to explain your code and improve readability.
+
+3. **Variables.py**
+   - Understand how to store data using variables.
+
+4. **Data_types.py**
+   - Learn about basic data types such as integers, floats, strings, and booleans.
+
+5. **User_Input.py**
+   - Learn how to take input from users using the input() function.
+
+6. **Simple_calculation.py**
+   - Perform simple calculations using user-provided input.
+
+7. **Arithmetic_operators.py**
+   - Learn basic arithmetic operators like addition, subtraction, multiplication, and division.
+
+8. **String_basics.py**
+   - Understand basic string operations, including concatenation and string length.
+10. **Common_Errors.py**
+    - Get familiar with common beginner errors and learn that errors are part of learning.
 
 ---
 
