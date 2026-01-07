@@ -1,4 +1,4 @@
-🐍 Python Basics
+## 🐍 Python Basics
 
 Welcome to the Basic section of the Python Codes repository.
 
@@ -6,7 +6,7 @@ This folder is designed for absolute beginners who are just starting their Pytho
 
 ---
 
-🤔 Common Beginner Questions (Answered Simply)
+## 🤔 Common Beginner Questions (Answered Simply)
 
 What is Python?
 
@@ -25,7 +25,7 @@ No. This folder assumes zero programming experience. Everything here starts from
 
 ---
 
-🎯 Goal of This Folder
+## 🎯 Goal of This Folder
 
 The purpose of the Basic folder is to help you:
 
@@ -38,7 +38,7 @@ This folder focuses on understanding, not problem-solving yet.
 
 ---
 
-📂 What’s Inside This Folder
+## 📂 What’s Inside This Folder
 
 Below are the files included in this section and what you will learn from each:
 
@@ -63,7 +63,7 @@ Get familiar with common beginner errors and learn that errors are part of learn
 
 ---
 
-🚀 How to Use This Folder
+## 🚀 How to Use This Folder
 
 1. Make sure Python is installed on your system.
 2. Open a terminal or command prompt.
@@ -76,7 +76,7 @@ python filename.py
 
 ---
 
-📈 What to Learn After This
+## 📈 What to Learn After This
 
 Once you are comfortable with the concepts in this folder, you can move to the Beginner section, where you will learn:
 
@@ -86,7 +86,7 @@ Once you are comfortable with the concepts in this folder, you can move to the B
 
 ---
 
-🌱 Learning Tip
+## 🌱 Learning Tip
 
 Don’t rush. Practice each file, modify the code, break it, and fix it again. Making mistakes is an important part of becoming a programmer.
 
