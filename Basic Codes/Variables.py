@@ -1,5 +1,9 @@
 # Variables store data in a program
-# Variables have names and hold values (data) of different types
+# Variables have names and hold values (data) of different types.
+# Variables are created by assigning a value using the '=' operator.
+# Example: age = 25, name = "Alice"
+# Common variable types include:
+
 print("--------Variable Types in Python:----------")
 print()
 
@@ -25,7 +29,7 @@ print()
 
 # String Variable
 print("2.---String Variable:---")
-name = "Alex"      # String: text
+name = "Aaisha"      # String: text
 print("Name:", name) 
 print()
 
@@ -36,11 +40,11 @@ print("First character of name:", name[0])  # 'A'
 first_letter = name[0]  # 'A' - Accessing first character using index
 
 # Slicing a string to get a substring
-print("First two letters of name:", name[0:2])  # 'Al'
-letter = name[0:2]  # 'Al' - Slicing from index 0 to 2 (not inclusive of 2)
+print("First two letters of name:", name[0:2])  # 'Aa'
+letter = name[0:2]  # 'Aa' - Slicing from index 0 to 2 (not inclusive of 2)
 
 # Slicing with step value
-print("Slicing with step value:", name[0:3:2])  # 'Ae'  - Slicing from index 0 to 4 with a step of 2
+print("Slicing with step value:", name[0:5:2])  # 'Aih'  - Slicing from index 0 to 5 with a step of 2
 print() 
 
 # List Variable
@@ -102,4 +106,4 @@ print("Type of coordinates:", type(coordinates)) # <class 'tuple'>
 print("Type of person:", type(person))         # <class 'dict'>
 print("Type of is_student:", type(is_student)) # <class 'bool'>
 print("Type of data:", type(data))             # <class 'NoneType'>
-# This program demonstrates different variable types in Python
+# This program demonstrates different variable types in Python.
