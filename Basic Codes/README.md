@@ -49,23 +49,21 @@ Below are the files included in this section and what you will learn from each:
    - Learn how to write comments to explain your code and improve readability.
 
 3. **Variables.py**
-   - Understand how to store data using variables.
+   - Understand how to store data using variables, and learn about basic data types such as integers, floats, strings, and booleans.
 
-4. **Data_types.py**
-   - Learn about basic data types such as integers, floats, strings, and booleans.
-
-5. **User_Input.py**
+4. **User_Input.py**
    - Learn how to take input from users using the input() function.
 
-6. **Simple_calculation.py**
+5. **Simple_calculation.py**
    - Perform simple calculations using user-provided input.
 
-7. **Arithmetic_operators.py**
+6. **Arithmetic_operators.py**
    - Learn basic arithmetic operators like addition, subtraction, multiplication, and division.
-
-8. **String_basics.py**
+     
+7. **String_basics.py**
    - Understand basic string operations, including concatenation and string length.
-10. **Common_Errors.py**
+     
+8. **Common_Errors.py**
     - Get familiar with common beginner errors and learn that errors are part of learning.
 
 ---
