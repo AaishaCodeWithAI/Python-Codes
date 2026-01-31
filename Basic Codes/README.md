@@ -66,6 +66,8 @@ Below are the files included in this section and what you will learn from each:
 8. **Common_Errors.py**
     - Get familiar with common beginner errors and learn that errors are part of learning.
 
+9. **Slicing.py**
+    - Learn how to use Python slicing on strings, lists, tuples, ranges, bytes, and bytearrays with clear examples and explanations.
 ---
 
 ## 🚀 How to Use This Folder
