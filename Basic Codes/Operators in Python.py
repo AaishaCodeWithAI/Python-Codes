@@ -17,6 +17,7 @@ Operators Covered:
 5. Membership
 6. Identity
 7. Bitwise
+8. Operator Precedence & Associativity
 
 Author: Aaisha's Learning Repo
 ========================================================================
@@ -25,33 +26,25 @@ Author: Aaisha's Learning Repo
 # ===============================================================
 # 1️⃣ USER INPUT
 # ===============================================================
-
 print("Welcome to Python Operators Interactive Demo!\n")
 
-# Ask the user for two numbers to test arithmetic and comparison operators
 num1 = int(input("Enter first number (num1): "))  
 num2 = int(input("Enter second number (num2): "))
 
-# Ask the user to input a list for membership operator tests
 sequence = [item.strip() for item in input(
     "Enter a list of items separated by commas: ").split(',')]
-# strip() removes spaces; split(',') splits input into list elements
 item_to_check = input(
     "Enter an item to check if it exists in the list: ").strip()  
 
-# Logical operator inputs
 print("\nLogical Operators Test (True/False)")
 p_input = input("Enter True or False for p: ")  
 q_input = input("Enter True or False for q: ")  
-# Convert string inputs to actual boolean values
 p = True if p_input.lower() == 'true' else False
 q = True if q_input.lower() == 'true' else False
 
-# Identity operator inputs: two lists
 list1 = input("Enter first list for identity test (comma separated): ").split(',')
 list2 = input("Enter second list for identity test (comma separated): ").split(',')
 
-# Separator for clarity
 print("\n=================================================================")
 print("Results:")
 
@@ -65,25 +58,24 @@ Arithmetic operators perform mathematical calculations on numbers.
 -  Subtraction
 *  Multiplication
 /  Division (float division)
-/  Floor division (integer division)
 %  Modulus (remainder)
 ** Exponentiation (power)
 """
 
 print("\n1. Arithmetic Operators:")
-print(f"{num1} + {num2} =", num1 + num2)  # Addition
-print(f"{num1} - {num2} =", num1 - num2)  # Subtraction
-print(f"{num1} * {num2} =", num1 * num2)  # Multiplication
-print(f"{num1} / {num2} =", num1 / num2 if num2 != 0 else "Cannot divide by zero")  # Float division
-print(f"{num1} // {num2} =", num1 // num2 if num2 != 0 else "Cannot floor-divide by zero")  # Floor division
-print(f"{num1} % {num2} =", num1 % num2 if num2 != 0 else "Cannot modulo by zero")  # Remainder
-print(f"{num1} ** {num2} =", num1 ** num2)  # Exponentiation
+print(f"{num1} + {num2} =", num1 + num2)
+print(f"{num1} - {num2} =", num1 - num2)
+print(f"{num1} * {num2} =", num1 * num2)
+print(f"{num1} / {num2} =", num1 / num2 if num2 != 0 else "Cannot divide by zero")
+print(f"{num1} // {num2} =", num1 // num2 if num2 != 0 else "Cannot floor-divide by zero")
+print(f"{num1} % {num2} =", num1 % num2 if num2 != 0 else "Cannot modulo by zero")
+print(f"{num1} ** {num2} =", num1 ** num2)
 
 # ===============================================================
 # 3️⃣ COMPARISON OPERATORS
 # ===============================================================
 """
-Comparison operators compare values and return a boolean result (True/False).
+Comparison operators return True or False.
 
 ==  Equal
 !=  Not equal
@@ -121,7 +113,7 @@ print(f"not {p} :", not p)
 # 5️⃣ ASSIGNMENT OPERATORS
 # ===============================================================
 """
-Assignment operators combine a basic operation with assignment:
+Assignment operators combine an operation with assignment:
 
 =   Assign value
 +=  Add and assign
@@ -136,27 +128,19 @@ Assignment operators combine a basic operation with assignment:
 print("\n4. Assignment Operators:")
 temp = num1
 print("Initial value:", temp)
-
-temp += num2
-print("After += :", temp)
-temp -= num2
-print("After -= :", temp)
-temp *= num2
-print("After *= :", temp)
-temp /= num2 if num2 != 0 else 1
-print("After /= :", temp)
-temp //= num2 if num2 != 0 else 1
-print("After //= :", temp)
-temp %= num2 if num2 != 0 else 1
-print("After %= :", temp)
-temp **= 2
-print("After **= :", temp)
+temp += num2; print("After += :", temp)
+temp -= num2; print("After -= :", temp)
+temp *= num2; print("After *= :", temp)
+temp /= num2 if num2 != 0 else 1; print("After /= :", temp)
+temp //= num2 if num2 != 0 else 1; print("After //= :", temp)
+temp %= num2 if num2 != 0 else 1; print("After %= :", temp)
+temp **= 2; print("After **= :", temp)
 
 # ===============================================================
 # 6️⃣ MEMBERSHIP OPERATORS
 # ===============================================================
 """
-Membership operators check if a value exists in a sequence (list, string, tuple, etc.)
+Membership operators check if a value exists in a sequence.
 
 in      → True if value exists
 not in  → True if value does not exist
@@ -180,15 +164,15 @@ is not  → True if both objects are different in memory
 print("\n6. Identity Operators:")
 print("List1:", list1)
 print("List2:", list2)
-print("list1 == list2 :", list1 == list2)  # Content equality
-print("list1 is list2 :", list1 is list2)  # Memory identity
+print("list1 == list2 :", list1 == list2)
+print("list1 is list2 :", list1 is list2)
 print("list1 != list2 :", list1 != list2)
 
 # ===============================================================
 # 8️⃣ BITWISE OPERATORS
 # ===============================================================
 """
-Bitwise operators work on binary representations of integers:
+Bitwise operators work on the binary representation of integers:
 
 &   → AND
 |   → OR
@@ -205,6 +189,46 @@ print(f"{num1} ^ {num2} :", num1 ^ num2)
 print(f"~{num1} :", ~num1)
 print(f"{num1} << 1 :", num1 << 1)
 print(f"{num1} >> 1 :", num1 >> 1)
+
+# ===============================================================
+# 9️⃣ OPERATOR PRECEDENCE & ASSOCIATIVITY
+# ===============================================================
+"""
+Operator precedence determines the order in which operations are evaluated.
+Higher precedence operators are executed first.
+
+Some common rules:
+1. Parentheses () → highest precedence
+2. Exponentiation ** → right-to-left associativity
+3. Unary +, -, ~ → right-to-left
+4. *, /, //, % → left-to-right
+5. +, - → left-to-right
+6. <<, >> → left-to-right
+7. & → left-to-right
+8. ^ → left-to-right
+9. | → left-to-right
+10. Comparison operators (==, !=, >, <, >=, <=) → left-to-right
+11. Logical not → right-to-left
+12. Logical and → left-to-right
+13. Logical or → left-to-right
+14. Assignment operators (=, +=, etc.) → right-to-left
+
+Example demonstrating precedence and associativity:
+"""
+
+a = 5
+b = 2
+c = 3
+
+print("\n8. Operator Precedence Example:")
+# Without parentheses, ** evaluated first, then * and + left-to-right
+result = a + b * c ** 2
+print("Expression: a + b * c ** 2")
+print("Calculated as: 5 + 2 * 3 ** 2 =", result)
+
+# Using parentheses to override precedence
+result2 = (a + b) * c ** 2
+print("Expression with parentheses: (a + b) * c ** 2 =", result2)
 
 # ===============================================================
 # END OF OPERATORS DEMO
