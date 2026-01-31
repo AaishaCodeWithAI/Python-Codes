@@ -57,8 +57,8 @@ Below are the files included in this section and what you will learn from each:
 5. **Simple_calculation.py**
    - Perform simple calculations using user-provided input.
 
-6. **Arithmetic_operators.py**
-   - Learn basic arithmetic operators like addition, subtraction, multiplication, and division.
+6. **Operators in Python.py**
+   - Learn about Operators and different types of operators: arithmetic, comparison, logical, assignment, membership, identity, and bitwise.
      
 7. **String_basics.py**
    - Understand basic string operations, including concatenation and string length.
